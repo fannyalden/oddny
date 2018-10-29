@@ -2,4 +2,4 @@
 
 made with react
 
-run "npmm start" to run the app
+run "npm start" to run the app
