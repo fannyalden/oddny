@@ -1,0 +1,42 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 1em;
+  padding: 1em;
+  justify-items: stretch;
+  align-items: stretch;
+}
+.grid > div:nth-child(3n) {
+  background: linear-gradient(135deg, #f9d2cb 0%, #d5536d 100%);
+}
+.grid > div:nth-child(3n + 1) {
+  background: linear-gradient(135deg, #e6ccd9 0%, #ac98b1 100%);
+}
+.grid > div:nth-child(3n + 2) {
+  background: linear-gradient(135deg, #8099b8 0%, #167a9c 100%);
+}
+.grid > div:nth-child(6n + 1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid > div:nth-child(6n + 2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.grid > div:nth-child(6n + 3) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+.grid > div:nth-child(6n + 4) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.grid > div:nth-child(6n + 5) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+.grid > div:nth-child(6n) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+}
